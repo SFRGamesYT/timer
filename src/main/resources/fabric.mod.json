@@ -13,21 +13,13 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/timer/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"sfr.timer.Timer"
-		],
 		"client": [
 			"sfr.timer.client.TimerClient"
 		]
 	},
 	"mixins": [
-		"timer.mixins.json",
-		{
-			"config": "timer.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
